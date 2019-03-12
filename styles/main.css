@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aquamarine
+}
+nav {
+    text-align: center;
+    background-color: rgb(65, 165, 184);
+    
+}
+nav ul li {
+    padding: 15px 30px;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: rgb(246, 252, 250);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+.titulo{
+    text-align: center;
+    background-color: rgb(255, 238, 7);
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: #000000;
+    padding: 60px 0;
+    
+}
+/* pagina 1 */
+header {
+    position: relative;
+    width: fit-content;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+header section:first-child{
+    margin-right: 60px
+}
+header section:last-child{
+    margin-left: 60px
+}
+.pagina1 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina1 section img{
+    width: 430px;
+    height: 350px;
+}
+
+.pagina1 section div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(141, 148, 40, 0.4);
+    text-align: center;
+    transform: scale(0);
+    overflow: hidden;
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina1 section:hover div{
+    transform: scale(1);
+}
+.pagina1 img{
+    transition: all .5s;
+}
+.pagina1 section:hover img{
+    transform: scale(1.2);
+}
+.pagina1 h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transform: translateY(-80px);
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina1 section:hover div h1{
+    transform: translateY(0);
+}
+.pagina1 h2{
+    font-family: 'Pacifico', cursive;
+    margin: -50px 57px 0px 70px;
+    text-align: justify;
+    color: white;
+    transform: translateY(500px);
+    transition: all .5s;
+    transition-delay: .5s;
+    font-size: 20px;
+}
+.pagina1 section:hover div h2{
+    transform: translateY(70px);
+}
+.pagina1 h3{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 80px 0px 0px 6px;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    transition: all 3s;
+    transition-delay: .3s;
+}
+/*  pagina 2 */
+.pagina2 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina2 section img{
+    width: 430px;
+    height: 350px;
+}
+header section:first-child{
+    margin-right: 60px
+}
+header section:last-child{
+    margin-left: 60px
+}
+.pagina2 div h1 {
+    font-family: 'Pacifico', cursive;
+   color: white;
+    transform:translate(500px,-80px);
+    transition: all .3s;
+    transition-delay: .3s;
+}
+.pagina2 div:hover h1{
+    transform: translate(0);
+}
+.pagina2 div h2{
+    font-family: 'Pacifico', cursive;
+    margin: 20px 57px 0px 70px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    transform: translate(-500px,100px);
+    opacity:0;
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina2 div:hover h2{
+    transform: translate(0);
+    opacity:1;
+}
+.pagina2 div h3{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transform: translateY(500px);
+    transition: all .5s;
+    transition-delay: .5s;
+    opacity: 0;
+}
+.pagina2 section:hover h3{
+    transform: translateY(0);
+    opacity: 1;
+}
+.pagina2 section div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    transform: rotate(90deg) translate(400px,-400px);
+    transition: all .5s;
+    background-color: rgba(12, 12, 12, 0.7);
+    width: fit-content;
+    overflow: hidden;
+}
+.pagina2 section:hover div{
+    transform: rotate(0) translateY(0) translateX(0);   
+}
+/* pagina3 */
+.pagina3 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina3 section img{
+    width: 430px;
+    height: 350px;
+    transition: all .5s;
+}
+.pagina3 section:hover img{
+    transform: scale(1.2) rotate(-6deg);
+}
+.pagina3 section div{
+    position:absolute;
+    background-color: rgba(44, 182, 140, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    transform: rotate(90deg) translate(-400px,-400px) ;
+    transition: all .5s;
+    overflow: hidden;
+}
+.pagina3 section:hover div{
+    transform: rotate(0) translate(0);
+}
+.pagina3 h1{
+    font-family: 'Pacifico', cursive;
+    transform: rotate(-90deg) translate(310px,-265px);
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina3 section:hover h1{
+    transform: translate(0) rotate(0);
+}
+.pagina3 h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    transform: rotate(90deg) translate(-400px,-300px);
+    transition: all .5s;
+    text-align: justify;
+    transition-delay: .5s;
+    margin: 20px 57px 0px 70px;
+    color: white
+}
+.pagina3 section:hover h2{
+    transform: translate(0) rotate(0);
+}
+.pagina3 h3{
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: all .5s;
+    transition-delay: .5s;
+    margin: 30px 0px 0px 6px;
+}
+.pagina3 section:hover h3{
+    transform: translate(0);
+    opacity: 1;
+}
+/* pagina 4 */
+.pagina4 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina4 section img{
+    width: 430px;
+    height: 350px;
+    transform: scale(1);
+    transition: all .5s;
+}
+.pagina4 section:hover img{
+    transform: scale(1.3);
+} 
+.pagina4 section div{
+    position:absolute;
+    margin: -354px 0px 0px -20px;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(19, 228, 165, 0.5);
+    text-align: center;
+    transform: rotate(720deg) scale(0) ;
+    transition: all .5s;
+    overflow: hidden;
+}
+.pagina4 section:hover div{
+    transform: rotate(0) scale(1);
+    overflow: hidden;
+}
+.pagina4 h1{
+    font-family: 'Pacifico', cursive;
+    transform: translateX(500px);
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina4 section:hover h1{
+    transform: translateX(0);
+}
+.pagina4 h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    transform: translateX(-500px);
+    text-align: justify;
+    color: white;
+    transition: all .5s;
+    transition-delay: .5s;
+    margin: 20px 57px 0px 70px;
+}
+.pagina4 section:hover h2{
+    transform: translateX(0);
+}
+.pagina4 h3{
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all .5s;
+    transition-delay: .5s;
+    margin: 30px 0px 0px 6px;
+}
+.pagina4 section:hover h3{
+    transform: translate(0);
+    opacity: 1;
+}
+/* pagina 5 */
+.pagina5 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina5 section img{
+    width: 430px;
+    height: 350px;
+}
+.pagina5 section div{
+    position:absolute;
+    margin: -354px 0px 0px -20px;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(221, 19, 228, 0.5);
+    text-align: center;
+    transform: rotate(720deg) scale(0) ;
+    transition: all .5s;
+    overflow: hidden;
+}
+.pagina5 section:hover div{
+    transform: rotate(0) scale(1);
+    overflow: hidden;
+}
+.pagina5 h1{
+    font-family: 'Pacifico', cursive;
+    transform: scale(0) rotate(720deg);
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina5 section:hover h1{
+    transform: scale(1) rotate(0);
+}
+.pagina5 h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    transform: translate(-500px,150px);
+    transition: all .5s;
+    transition-delay: 1s;
+    margin: 20px 57px 0px 70px;
+}
+.pagina5 section:hover h2{
+    transform: translate(0);
+}
+.pagina5 h3{
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    transform: scale(0) rotate(720deg);
+    transition: all .5s;
+    transition-delay: 1s;
+    margin: 30px 0px 0px 6px;
+}
+.pagina5 section:hover h3{
+    transform: scale(1) rotate(0);
+}
+/* pagina 6 */
+.pagina6 section{
+    position: relative;
+    width: 430px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+}
+.pagina6 section img{
+    width: 430px;
+    height: 350px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all .5s;
+}
+.pagina6 section:hover img{
+    transform: scale(2);
+    opacity: 0;
+}
+.pagina6 section div{
+    position:absolute;
+    margin: -354px 0px 0px -20px;
+    width: 450px;
+    height: 350px;
+    background-color: rgba(228, 96, 19, 1);
+    text-align: center;
+    transform: scale(0);
+    transition: all .5s;
+    overflow: hidden;
+}
+.pagina6 section:hover div{
+    transform: scale(1);
+    overflow: hidden;
+}
+.pagina6 h1{
+    font-family: 'Pacifico', cursive;
+    transform: scale(0);
+    transition: all .5s;
+    transition-delay: .5s;
+}
+.pagina6 section:hover h1{
+    transform: scale(1);
+}
+.pagina6 h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    transform: scale(0);
+    transition: all .5s;
+    transition-delay: .5s;
+    margin: 20px 57px 0px 70px;
+}
+.pagina6 section:hover h2{
+    transform: scale(1);
+}
+.pagina6 h3{
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(224, 228, 19);
+    width: 120px;
+    height: 38px;
+    display: inline-block;
+    transform: scale(0) rotate(720deg);
+    transition: all .5s;
+    transition-delay: .5s;
+    margin: 30px 0px 0px 6px;
+}
+.pagina6 section:hover h3{
+    transform: scale(1) rotate(0);
+}
